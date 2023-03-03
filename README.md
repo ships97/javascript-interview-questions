@@ -598,7 +598,7 @@ You can download the PDF and Epub version of this repository from the latest run
    In JavaScript, call, apply, and bind are three methods that can be used to manipulate the value of this keyword in a function.
    The difference between Call, Apply and Bind can be explained with below examples,
 
-   **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
+   **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one.
    The call method is used to call a function with a given this value and arguments provided individually. It takes the this value as its first argument, followed by    the arguments that the function should be called with.
 
    ```javascript
@@ -615,7 +615,7 @@ You can download the PDF and Epub version of this repository from the latest run
    invite.call(employee2, "Hello", "How are you?"); // Hello Jimmy Baily, How are you?
    ```
 
-   **Apply:** Invokes the function with a given `this` value and allows you to pass in arguments as an array
+   **Apply:** Invokes the function with a given `this` value and allows you to pass in arguments as an array.
    The apply method is similar to the call method, but it takes the arguments as an array instead of individually. It is useful when we don't know the number of        arguments that will be passed to the function.
 
    ```javascript
@@ -632,7 +632,7 @@ You can download the PDF and Epub version of this repository from the latest run
    invite.apply(employee2, ["Hello", "How are you?"]); // Hello Jimmy Baily, How are you?
    ```
 
-   **bind:** returns a new function, allowing you to pass any number of arguments
+   **bind:** returns a new function, allowing you to pass any number of arguments.
    The bind method creates a new function that has the same body as the original function but a different this value. It returns a new function that can be called      later with the desired this value and any other arguments.
 
    ```javascript
