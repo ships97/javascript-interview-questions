@@ -595,9 +595,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
 3. ### What is the difference between Call, Apply and Bind
 
+   In JavaScript, call, apply, and bind are three methods that can be used to manipulate the value of this keyword in a function.
    The difference between Call, Apply and Bind can be explained with below examples,
 
    **Call:** The call() method invokes a function with a given `this` value and arguments provided one by one
+   The call method is used to call a function with a given this value and arguments provided individually. It takes the this value as its first argument, followed by    the arguments that the function should be called with.
 
    ```javascript
    var employee1 = { firstName: "John", lastName: "Rodson" };
@@ -614,6 +616,7 @@ You can download the PDF and Epub version of this repository from the latest run
    ```
 
    **Apply:** Invokes the function with a given `this` value and allows you to pass in arguments as an array
+   The apply method is similar to the call method, but it takes the arguments as an array instead of individually. It is useful when we don't know the number of        arguments that will be passed to the function.
 
    ```javascript
    var employee1 = { firstName: "John", lastName: "Rodson" };
@@ -630,6 +633,7 @@ You can download the PDF and Epub version of this repository from the latest run
    ```
 
    **bind:** returns a new function, allowing you to pass any number of arguments
+   The bind method creates a new function that has the same body as the original function but a different this value. It returns a new function that can be called      later with the desired this value and any other arguments.
 
    ```javascript
    var employee1 = { firstName: "John", lastName: "Rodson" };
@@ -647,6 +651,7 @@ You can download the PDF and Epub version of this repository from the latest run
    inviteEmployee2("Hello", "How are you?"); // Hello Jimmy Baily, How are you?
    ```
 
+   Overall, call, apply, and bind are used to control the value of this in a function. They are essential in JavaScript programming and are frequently used by          developers.
    Call and apply are pretty interchangeable. Both execute the current function immediately. You need to decide whether it’s easier to send in an array or a comma separated list of arguments. You can remember by treating Call is for **comma** (separated list) and Apply is for **Array**.
 
    Whereas Bind creates a new function that will have `this` set to the first parameter passed to bind().
